@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Abriendo Zenit Finance...</title>
+  <style>
+    body {
+      background: #0f172a;
+      color: #22d3ee;
+      font-family: sans-serif;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+    p { font-size: 18px; }
+  </style>
+</head>
+<body>
+  <p>🌿 Abriendo Zenit Finance...</p>
+  <script>
+    // Tomar todos los parámetros que Google envió (?code=...&state=...)
+    const params = window.location.search;
+    // Redirigir a la app Android
+    window.location.href = 'com.zenitapp.finance://oauth2redirect' + params;
+  </script>
+</body>
+</html>
